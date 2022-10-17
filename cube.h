@@ -50,9 +50,7 @@ public:
     Polygon operator = (Polygon other);
     void rotate_polygon(const float &a, const float &b, const float &g);
     const Point* get_polygon() {return positioned_corners;};
-    const float get_midpoint_z() {return /*Point((corners[0].get_point()[0]+corners[2].get_point()[0])/2,
-                                                (corners[0].get_point()[1]+corners[2].get_point()[1])/2,*/
-                                                ((corners[0].get_point()[2]+corners[2].get_point()[2])/2);};
+    const float get_midpoint_z(int xyz);
 };
 class polygon;
 class cube : public QMainWindow
