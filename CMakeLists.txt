@@ -18,6 +18,7 @@ set(PROJECT_SOURCES
         main.cpp
         cube.cpp
         cube.h
+        insertion_sort.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
